@@ -68,7 +68,7 @@
     "normalize.css": "8.0.1",
     "package-name-regex": "^1.0.9",
     "puppeteer": "5.5.0",
-    "replace": "1.2.0",
+    "replace": "1.2.2",
     "semantic-release": "17.3.9",
     "storybook-addon-jsx": "^7.3.6",
     "ts-loader": "8.0.17",
