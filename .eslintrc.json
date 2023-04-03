@@ -1,0 +1,112 @@
+{
+	"extends": [
+		/* Should be used in new repos */
+		"airbnb-base",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		/* End - Should be used in new repos */
+		"plugin:@stencil/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"rules": {
+		"arrow-body-style": "off",
+		"arrow-parens": [
+			"error",
+			"as-needed"
+		],
+		"comma-dangle": [
+			"error",
+			"only-multiline"
+		],
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"import/no-extraneous-dependencies": [
+			"error",
+			{
+				"devDependencies": true
+			}
+		],
+		"import/prefer-default-export": "off",
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"lines-between-class-members": "off",
+		"max-len": [
+			"error",
+			{
+				"code": 140,
+				"tabWidth": 4,
+				"ignoreComments": true,
+				"ignoreUrls": true,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true
+			}
+		],
+		"no-param-reassign": "off",
+		"no-tabs": 0,
+		"no-shadow": "off",
+		"no-underscore-dangle": [
+			"error",
+			{
+				"allowAfterThis": true
+			}
+		],
+		"no-use-before-define": "off",
+		"react/jsx-no-bind": "off",
+		/* Should be use in new repos */
+		"sort-keys": 2,
+		"sort-vars": 2,
+		/* End - Should be use in new repos */
+		"@stencil/own-props-must-be-private": "off",
+		"@stencil/required-jsdoc": "off",
+		"@stencil/strict-boolean-conditions": "off",
+		"@typescript-eslint/no-misused-promises": [
+			"error",
+			{
+				"checksVoidReturn": false
+			}
+		],
+		"@typescript-eslint/no-shadow": [
+			"off"
+		],
+		"@typescript-eslint/no-unsafe-assignment": "off",
+		"@typescript-eslint/no-unsafe-call": "off",
+		"@typescript-eslint/no-unsafe-member-access": "off",
+		"@typescript-eslint/no-unsafe-return": "off"
+	},
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [
+					".js",
+					".jsx",
+					".ts",
+					".tsx"
+				]
+			}
+		},
+		"react": {
+			"version": "detect"
+		}
+	}
+}
