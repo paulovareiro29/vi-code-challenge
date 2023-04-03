@@ -13,7 +13,7 @@ export default {
 	decorators: [jsxDecorator],
 };
 
-export const empty = ({
+export const CTA = ({
 	headline = text('Headline', 'CTA - Main conversion'),
 	title = text('CTA Title', 'A wonderful serenity has taken possession'),
 	description = text(
